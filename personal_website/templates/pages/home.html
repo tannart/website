@@ -17,6 +17,10 @@
         <div class="col-lg-6 fade-in">
             <h1 class="display-1 fw-bold mb-4 text-gradient">Charlie Brodie</h1>
             <h2 class="h2 text-accent mb-4">Lead Developer</h2>
+            <!-- Contact Info -->
+            <div class="mb-3 contact-info">
+                <div><a href="https://www.linkedin.com/in/charlie-brodie-790739274/" class="text-light" target="_blank">LinkedIn</a></div>
+            </div>
             <p class="lead mb-4 text-light">Passionate about building scalable, maintainable software solutions and leading development teams to success.</p>
             <div class="d-flex gap-3">
                 <a href="{% url 'about' %}" class="btn btn-glow">View CV</a>
@@ -34,75 +38,115 @@
 <!-- React Components Container -->
 <div id="react-root"></div>
 
-<!-- About Section -->
-<div class="container py-5">
-    <div class="row">
-        <div class="col-lg-8 mx-auto">
-            <h2 class="h3 mb-4">About Me</h2>
-            <p class="mb-4">
-                I'm a seasoned Lead Developer with extensive experience in software architecture, team leadership, and delivering high-quality solutions. 
-                My expertise spans across full-stack development, cloud technologies, and agile methodologies.
-            </p>
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h3 class="h5 card-title">Technical Skills</h3>
-                            <ul class="list-unstyled">
-                                <li>• Full-stack Development</li>
-                                <li>• Cloud Architecture</li>
-                                <li>• Team Leadership</li>
-                                <li>• Agile Methodologies</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h3 class="h5 card-title">Connect</h3>
-                            <div class="d-flex gap-3">
-                                <a href="https://github.com/yourusername" class="text-light" target="_blank">
-                                    <i class="fab fa-github fa-2x"></i>
-                                </a>
-                                <a href="https://linkedin.com/in/yourusername" class="text-light" target="_blank">
-                                    <i class="fab fa-linkedin fa-2x"></i>
-                                </a>
-                                <a href="https://twitter.com/yourusername" class="text-light" target="_blank">
-                                    <i class="fab fa-twitter fa-2x"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<!-- Summary Section -->
+<div class="container py-4">
+    <h2 class="h3 mb-3">Summary</h2>
+    <p class="lead">
+        Experienced technical leader and hands-on engineer with over a decade of experience delivering resilient, scalable, and high-performance systems across fintech, cybersecurity, and gaming. Known for simplifying complex systems, enabling rapid delivery through DevOps and GitOps practices, and mentoring engineers to build confidence and autonomy. Proven success in leading architecture overhauls, reducing cloud spend, and delivering customer-critical software under pressure. Looking to bring pragmatic leadership and deep backend expertise to a mission-driven company.
+    </p>
+</div>
+
+<!-- Technical Skills Section -->
+<div class="container py-4">
+    <h2 class="h3 mb-3">Technical Skills</h2>
+    <ul class="list-unstyled">
+        <li><strong>Languages:</strong> Python, Typescript, Javascript, Go, Java, Swift, Lisp, C#, Groovy, Scala, C</li>
+        <li><strong>Frameworks & Libraries:</strong> Django, Celery, HTMX, React, Vue, NestJS, ArgoCD</li>
+        <li><strong>Platforms:</strong> AWS, GCP, Digital Ocean, Jira</li>
+        <li><strong>DevOps:</strong> Kubernetes (Kustomize/Helm), Terraform, ArgoCD, Flux, GitlabCI, Jenkins</li>
+    </ul>
+</div>
+
+<!-- Professional Experience Section -->
+<div class="container py-4">
+    <h2 class="h3 mb-3">Professional Experience</h2>
+    <div class="experience-list">
+        <div class="card mb-3">
+            <div class="card-body">
+                <h4 class="h5">Contract Software Developer – Chancery Lane Financial Planners LTD</h4>
+                <div class="text-muted">Jan 2025 - Present</div>
+                <ul>
+                    <li>Spearheading design, planning, and creation of an AI-driven financial report creation tool.</li>
+                    <li>Project was brought from concept to production release in 3 months with 2 developers.</li>
+                    <li>Technologies: Python, Django, C#, AI (OpenAI), Digital Ocean, Kubernetes.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h4 class="h5">Technical Lead – Gameye</h4>
+                <div class="text-muted">Jun 2023 - Feb 2025</div>
+                <ul>
+                    <li>Building software to manage servers hosting multiplayer gaming sessions.</li>
+                    <li>Transitioned k8s deployment procedures from hand-rolled kubectl scripts to a full-fledged, deterministic gitOps workflow with ArgoCD, reducing deployment related downtime by ~90% and increasing deployments from ~1/week to ~5/day.</li>
+                    <li>Spearheaded and managed a team of 5 developers the total rewrite of the microservices architecture including a redesign of the RestAPI. We moved from ~25 Typescript microservices to 3 Go Microservices resulting in massive response time and stability improvements platform-wide and a >50% reduction in cloud spend for the cluster.</li>
+                    <li>Personally managed relationship and co-development with our largest client Bungie, references on request.</li>
+                    <li>Technologies: Kubernetes, TypeScript, ArgoCD, React, Go, C#, NestJS, AWS, GCP.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h4 class="h5">Lead Software Engineer – Storm Guidance Ltd.</h4>
+                <div class="text-muted">Jun 2020 - June 2023</div>
+                <ul>
+                    <li>Designed and constructed an industry-leading penetration testing and website vulnerability analysis tool.</li>
+                    <li>Consolidated, maintained, and streamlined infrastructure for various legacy projects, leading to a reduction in cloud costs of ~80% with no negative side-effects.</li>
+                    <li>Technologies: Python (Django), K8s, AWS, JS (Vue, HTMX), Celery, PostgreSQL.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h4 class="h5">CTO – Tail Offers LTD, London</h4>
+                <div class="text-muted">Jul 2016 - Jun 2020</div>
+                <ul>
+                    <li>Designed, built, and maintained an uptime critical project integrated with multiple banking API's serving real-time offers to thousands of customers daily.</li>
+                    <li>Developed full-stack components: iOS(Swift)/Android(Java) apps, admin dashboard(Vue, HTMX), backend(Django, Celery, Python), and database(Postgresql) with a little caching for efficiency (redis). Including all relevant API's connecting</li>
+                    <li>Technologies: Python (Django), Linux, Celery, Redis, JavaScript, HTML, CSS.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h4 class="h5">Developer, Founder – Heidi, London</h4>
+                <div class="text-muted">Dec 2015 - Jun 2016</div>
+                <ul>
+                    <li>Designed and built a money-saving assistant using open banking APIs. (Java, JS, MySQL)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h4 class="h5">Integration Developer – Peerius, London</h4>
+                <div class="text-muted">Oct 2014 - Feb 2016</div>
+                <ul>
+                    <li>Integrated recommendation engine into client websites (Java, Groovy, Scala, JS, HTML, CSS)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h4 class="h5">Junior Developer – Master Adviser IFA LTD, London</h4>
+                <div class="text-muted">Dec 2013 - Oct 2014</div>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h4 class="h5">Intern – Krom River Investment Manager, Zug, Switzerland</h4>
+                <div class="text-muted">Jan 2012 - Apr 2012</div>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Previous Roles Section -->
-<div class="container py-5">
-    <h2 class="h3 mb-4">Previous Roles</h2>
-    <div class="row g-4">
-        <div class="col-md-6">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h3 class="h5 card-title">Lead Developer</h3>
-                    <h4 class="h6 text-muted">Tech Company A</h4>
-                    <p class="card-text">Led a team of 8 developers in building scalable microservices architecture. Implemented CI/CD pipelines and improved deployment efficiency by 40%.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h3 class="h5 card-title">Senior Software Engineer</h3>
-                    <h4 class="h6 text-muted">Tech Company B</h4>
-                    <p class="card-text">Architected and developed cloud-native applications using modern technologies. Mentored junior developers and established best practices.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+<!-- Education Section -->
+<div class="container py-4">
+    <h2 class="h3 mb-3">Education</h2>
+    <ul class="list-unstyled">
+        <li><strong>MSc Computer Science</strong>, Birkbeck, University of London, London<br><span class="text-muted">Sep 2012 - Sep 2013 | Grade: Merit</span></li>
+        <li class="mt-2"><strong>BSc Biology</strong>, University of Sussex, London<br><span class="text-muted">Sep 2008 - Jul 2011 | Grade: 2:1</span></li>
+    </ul>
 </div>
 
 <!-- Frameworks & Technologies Section -->
